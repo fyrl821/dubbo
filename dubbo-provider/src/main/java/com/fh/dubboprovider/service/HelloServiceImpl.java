@@ -15,12 +15,14 @@ package com.fh.dubboprovider.service;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.fh.service.HelloService;
+import org.springframework.stereotype.Component;
 
 /**
  * Function Description: HelloServiceImpl 实现类 <br>
  * Writter: peilun <br>
  * Creating Time: 2020-03-24 10:11 <br>
  **/
+@Component
 @Service
 public class HelloServiceImpl implements HelloService {
 

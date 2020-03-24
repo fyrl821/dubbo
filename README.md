@@ -17,3 +17,16 @@ dubbo-test
  http://mirror.bit.edu.cn/apache/zookeeper/
 ```
 
+zookeeper中查看消费者提供这命令：
+```$xslt
+# 进入zk命令行端
+./zkCli.sh -server 192.168.33.128:2181
+
+# 查看/dubbo下节点
+ls /dubbo
+[zk: 192.168.33.128:2181(CONNECTED) 4] ls /dubbo/com.fh.service.HelloService
+[consumers, configurators, routers, providers]
+```
+
+## 易出现问题点：
+1、服务生产者provider中，@Service要使用dubbo提供的注解；并且要加上@Component标记容器受spring管理。
