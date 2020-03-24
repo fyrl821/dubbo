@@ -8,7 +8,7 @@ dubbo-test
 3. **服务访问压力以及时长统计**——当前系统的压力主要在哪里，如何来扩容和优化
 4. **服务降级**——某个服务挂掉之后调用备用服务
 
-[!dubbo架构图](./resource/dubbo.png)
+![dubbo.png](./resource/dubbo.png)
 
 
 ### dubbo下载
